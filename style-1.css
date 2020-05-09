@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 40%, rgba(255, 255, 0) 40% 60%, white  );
+}
+
+.main{
+    height: 550px;
+    width: 801px;
+    box-shadow: 1px 1px 1px 1px grey;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.card{
+    height: 275px;
+    width: 267px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+.heading{
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.info{
+    position: absolute;
+    opacity: 0;
+
+}
+
+
+.image{
+    height: 275px;
+    width: 267px;
+}
+
+
+
+.card:hover .info{
+    opacity: 1;
+    top: 40%;
+}
+
+.card:hover .image{
+    opacity: 0.9;
+}
